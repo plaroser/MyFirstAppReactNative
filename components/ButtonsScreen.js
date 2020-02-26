@@ -12,7 +12,7 @@ function Separator() {
     return <View style={styles.separator} />;
 }
 
-function ButtonsScreen() {
+function ButtonsScreen({ navigation }) {
     return (
         <SafeAreaView style={styles.container}>
             <View>
@@ -65,6 +65,7 @@ function ButtonsScreen() {
                     />
                 </View>
             </View>
+            <Button title="Go back" onPress={() => navigation.goBack()} />
         </SafeAreaView>
     );
 }
