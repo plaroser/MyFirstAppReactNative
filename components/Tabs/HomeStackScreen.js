@@ -12,8 +12,8 @@ function HomeScreen({ navigation }) {
                 onPress={() => navigation.navigate('Details')}
             />
             <Button
-                title="Go to Settings"
-                onPress={() => navigation.navigate('Settings')}
+                title="Go to Basic Components"
+                onPress={() => navigation.navigate('BasicComponents')}
             />
         </View>
     );

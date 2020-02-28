@@ -3,7 +3,7 @@ import DetailsScreen from '../DetailsScreen';
 import { Button, Text, View } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
 
-function SettingsScreen({ navigation }) {
+function BasicComponentsScreen({ navigation }) {
     return (
         <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
             <Text>Settings screen</Text>
@@ -17,13 +17,13 @@ function SettingsScreen({ navigation }) {
 }
 const SettingsStack = createStackNavigator();
 
-function SettingsStackScreen() {
+function BasicComponentsStackScreen() {
     return (
         <SettingsStack.Navigator>
-            <SettingsStack.Screen name="Settings" component={SettingsScreen} />
+            <SettingsStack.Screen name="BasicComponents" component={BasicComponentsScreen} />
             <SettingsStack.Screen name="Details" component={DetailsScreen} />
         </SettingsStack.Navigator>
     );
 }
 
-export default SettingsStackScreen;
+export default BasicComponentsStackScreen;
